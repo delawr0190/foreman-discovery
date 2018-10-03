@@ -43,6 +43,9 @@ public class Main {
                 apiIp,
                 apiPort,
                 "pools");
+
+        System.out.println(
+                "DONE! - make sure you remove your wallet from pools.json");
     }
 
     /**
@@ -77,6 +80,9 @@ public class Main {
             FileUtils.writeByteArrayToFile(
                     new File(command + ".json"),
                     response.getBytes());
+            System.out.println(
+                    "Captured '" + command + "' response to '" +
+                            command + ".json'...");
         } else {
             System.out.println("Failed to connect to " + apiIp + ":" + apiPort);
         }
