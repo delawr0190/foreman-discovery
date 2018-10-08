@@ -38,6 +38,10 @@ public class Main {
         requestAndWrite(
                 apiIp,
                 apiPort,
+                "summary");
+        requestAndWrite(
+                apiIp,
+                apiPort,
                 "stats");
         requestAndWrite(
                 apiIp,
