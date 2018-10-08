@@ -8,7 +8,7 @@ foreman-discovery provides a Java application that will query a cgminer running 
 {"command":"pools"}
 ```
 
-Their responses are placed into `stats.json` and `pools.json`, respectively.
+Their responses are placed into `summary.json`, `stats.json`, and `pools.json`, respectively.
 
 ## Windows
 
