@@ -7,7 +7,7 @@
     <groupId>mn.foreman</groupId>
     <artifactId>foreman-discovery</artifactId>
     <packaging>jar</packaging>
-    <version>1.2</version>
+    <version>1.2.0</version>
 
     <name>foreman: discovery</name>
     <organization>
