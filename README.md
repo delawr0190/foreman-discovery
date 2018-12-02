@@ -5,10 +5,11 @@ foreman-discovery provides a Java application that will query a cgminer running 
 ```
 {"command":"summary"}
 {"command":"stats"}
+{"command":"devs"}
 {"command":"pools"}
 ```
 
-Their responses are placed into `summary.json`, `stats.json`, and `pools.json`, respectively.
+Their responses are placed into `summary.json`, `stats.json`, `devs.json`, and `pools.json`, respectively.
 
 ## Windows
 
