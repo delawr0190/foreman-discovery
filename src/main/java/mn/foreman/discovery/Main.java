@@ -46,6 +46,10 @@ public class Main {
         requestAndWrite(
                 apiIp,
                 apiPort,
+                "devs");
+        requestAndWrite(
+                apiIp,
+                apiPort,
                 "pools");
 
         System.out.println(
