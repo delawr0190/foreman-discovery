@@ -3,13 +3,14 @@
 foreman-discovery provides a Java application that will query a cgminer-based miner running at the desired IP and port (prompted at runtime, but `port` is typically `4028`).  The following commands are executed against the miner API:
 
 ```
+{"command":"version"}
 {"command":"summary"}
 {"command":"stats"}
 {"command":"devs"}
 {"command":"pools"}
 ```
 
-Their responses are placed into `summary.json`, `stats.json`, `devs.json`, and `pools.json`, respectively.
+Their responses are placed into `version.json`, `summary.json`, `stats.json`, `devs.json`, and `pools.json`, respectively.
 
 ## Windows
 
