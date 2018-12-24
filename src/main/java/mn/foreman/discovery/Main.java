@@ -13,8 +13,8 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /**
- * This application will query a cgminer at the desired IP and port and dump
- * "stats" and "pools" responses to a local file.
+ * This application will query a cgminer at the desired IP and port and dump API
+ * responses to files.
  */
 public class Main {
 
@@ -35,6 +35,10 @@ public class Main {
         System.out.print("Enter API Port: ");
         final int apiPort = scanner.nextInt();
 
+        requestAndWrite(
+                apiIp,
+                apiPort,
+                "version");
         requestAndWrite(
                 apiIp,
                 apiPort,
