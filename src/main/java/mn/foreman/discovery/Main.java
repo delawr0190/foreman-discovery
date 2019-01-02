@@ -82,7 +82,9 @@ public class Main {
                                 command));
         final Connection connection =
                 ConnectionFactory.createJsonConnection(
-                        request);
+                        request,
+                        1,
+                        TimeUnit.SECONDS);
         connection.query();
 
         if (request.waitForCompletion(
