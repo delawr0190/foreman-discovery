@@ -1,0 +1,23 @@
+language: java
+jdk:
+  - oraclejdk8
+  - openjdk8
+
+install: mvn install --settings .travis.settings.xml -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script: mvn verify --settings .travis.settings.xml
+
+deploy:
+  - provider: script
+    script: mvn deploy --settings .travis.settings.xml
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: releases
+    api_key: "$GITHUB_TOKEN"
+    file: "target/*.zip"
+    file_glob: true
+    skip_cleanup: true
+    draft: true
+    on:
+      tags: true
