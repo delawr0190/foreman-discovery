@@ -14,10 +14,11 @@ deploy:
     on:
       branch: master
   - provider: releases
-    api_key: "$GITHUB_TOKEN"
+    api_key: $GITHUB_TOKEN
     file: "target/*.zip"
     file_glob: true
     skip_cleanup: true
     draft: true
     on:
       tags: true
+    name: $TRAVIS_BRANCH
